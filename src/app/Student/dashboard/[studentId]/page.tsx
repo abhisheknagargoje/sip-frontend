@@ -16,7 +16,7 @@ export default async function StudentPage({
 }) {
   const studentId = params.studentId;
   const baseUrl = process.env.API_BASE_URL;
-  const url = `http://localhost:8000/api/v1/student/${studentId}`;
+  const url = `${baseUrl}/student/${studentId}`;
   const response = await axios.get(url);
   const student = response.data.data;
 

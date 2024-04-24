@@ -149,6 +149,8 @@ const internship = () => {
     event.preventDefault();
     setloadingOL(true);
     const file = selectedFileOL[index];
+    console.log(selectedFilePL);
+
     if (file) {
       const studentCookie = getCookie("Student");
       if (!studentCookie) {
@@ -199,6 +201,8 @@ const internship = () => {
     event.preventDefault();
     setLoading(true); // Set loading state to true when upload starts
     const file = selectedFilePL[index];
+    // console.log(selectedFilePL);
+
     if (file) {
       const studentCookie = getCookie("Student");
       if (!studentCookie) {
@@ -689,7 +693,7 @@ const internship = () => {
                                     <button
                                       onClick={() =>
                                         window.open(
-                                          internship.offerLetter,
+                                          internship.offerLetter.url,
                                           "_blank"
                                         )
                                       }
@@ -781,7 +785,7 @@ const internship = () => {
                                     <button
                                       onClick={() =>
                                         window.open(
-                                          internship.permissionLetter,
+                                          internship.permissionLetter.url,
                                           "_blank"
                                         )
                                       }
@@ -874,7 +878,7 @@ const internship = () => {
                                     <button
                                       onClick={() =>
                                         window.open(
-                                          internship.completionLetter,
+                                          internship.completionLetter.url,
                                           "_blank"
                                         )
                                       }
