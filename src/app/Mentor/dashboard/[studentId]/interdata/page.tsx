@@ -347,7 +347,7 @@ const Intermarks = ({ params }: { params: { studentId: string } }) => {
                                                 <button
                                                   onClick={() =>
                                                     window.open(
-                                                      internship.offerLetter,
+                                                      internship.offerLetter.url,
                                                       "_blank"
                                                     )
                                                   }
@@ -381,7 +381,7 @@ const Intermarks = ({ params }: { params: { studentId: string } }) => {
                                                 <button
                                                   onClick={() =>
                                                     window.open(
-                                                      internship.permissionLetter,
+                                                      internship.permissionLetter.url,
                                                       "_blank"
                                                     )
                                                   }
@@ -415,7 +415,7 @@ const Intermarks = ({ params }: { params: { studentId: string } }) => {
                                                 <button
                                                   onClick={() =>
                                                     window.open(
-                                                      internship.completionLetter,
+                                                      internship.completionLetter.url,
                                                       "_blank"
                                                     )
                                                   }

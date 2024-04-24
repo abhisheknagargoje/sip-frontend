@@ -312,7 +312,7 @@ const StudentPage = ({ params }: { params: { studentId: string } }) => {
                                           <button
                                             onClick={() =>
                                               window.open(
-                                                seminarData[0].report,
+                                                seminarData[0].report.url,
                                                 "_blank"
                                               )
                                             }
@@ -340,7 +340,7 @@ const StudentPage = ({ params }: { params: { studentId: string } }) => {
                                           <button
                                             onClick={() =>
                                               window.open(
-                                                seminarData[0].abstract,
+                                                seminarData[0].abstract.url,
                                                 "_blank"
                                               )
                                             }
@@ -366,7 +366,7 @@ const StudentPage = ({ params }: { params: { studentId: string } }) => {
                                         <button
                                           onClick={() =>
                                             window.open(
-                                              seminarData[0].ppt,
+                                              seminarData[0].ppt.url,
                                               "_blank"
                                             )
                                           }
